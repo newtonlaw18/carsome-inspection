@@ -19,6 +19,7 @@ npm run serve # fire up vue client server
 ## Assumptions
 - One customer can make multiple appointments.
 - Customer is unable to make any appointment after office hour (9-6pm).
+- Customer is unable to make any appointment before current hour.
 - A confirmation email will be sent to the customer after appointment is scheduled and confirmed. 
 - Code to send a confirmation email is not within the scope of this project.
 - Customer cannot make any booking without filing in every fields the appointment form.
@@ -33,6 +34,7 @@ npm run serve # fire up vue client server
 ## Tech Stacks
 - Backend: Node.js with Express
 - Frontend: Vue
+- Database: MongoDB (Mongo Atlas Cloud DB)
 - Deployment: Heroku
 
 ## License
