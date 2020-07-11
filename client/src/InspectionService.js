@@ -2,6 +2,7 @@ import axios from "axios";
 axios.defaults.headers.common = {
   "Content-Type": "application/json",
 };
+axios.defaults.baseURL = location.origin;
 
 const url = "api/inspections/";
 
@@ -33,6 +34,7 @@ class InspectionService {
       try {
         const res = await axios.get(url + id);
         const data = res.data;
+        console.log(res)
         resolve(
           data.map((inspection) => ({
             ...inspection,
