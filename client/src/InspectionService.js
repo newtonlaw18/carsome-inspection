@@ -2,7 +2,7 @@ import axios from "axios";
 axios.defaults.headers.common = {
   "Content-Type": "application/json",
 };
-axios.defaults.baseURL = location.origin;
+axios.defaults.baseURL = (process.env.NODE_ENV !== 'production') ? location.origin : 'https://carsome-inspection-service.herokuapp.com';
 
 const url = "api/inspections/";
 
