@@ -37,5 +37,3 @@ npm run serve # fire up vue client server
 - Database: MongoDB (Mongo Atlas Cloud DB)
 - Deployment: Heroku
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
